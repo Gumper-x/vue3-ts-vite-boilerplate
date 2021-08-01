@@ -2,7 +2,7 @@
   "name": "vue3-ts-vite-boilerplate",
   "version": "0.0.0",
   "scripts": {
-    "dev": "vite",
+    "dev": "vite --host",
     "build": "vue-tsc --noEmit && vite build",
     "serve": "vite preview"
   },
