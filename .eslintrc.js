@@ -20,7 +20,7 @@ module.exports = {
   plugins: ["import", "promise", "prettier"],
   rules: {
     "no-console": "off",
-    "no-unused-vars": "warn",
+    "no-unused-vars": "off",
     "no-else-return": "error",
     "default-param-last": "error",
     "no-var": "error",
@@ -31,13 +31,11 @@ module.exports = {
     // eslint-plugin-import
     "import/extensions": [
       "warn",
-      "ignorePackages",
+      "never",
       {
-        js: "never",
-        jsx: "never",
-        ts: "never",
-        tsx: "never",
-        vue: "never",
+        vue: "always",
+        css: "always",
+        scss: "always",
       },
     ],
     // eslint-plugin-vue
@@ -57,5 +55,16 @@ module.exports = {
     "promise/valid-params": "error",
     "promise/prefer-await-to-then": "warn",
     "promise/always-return": "error",
+    // typescript-eslint
+    "@typescript-eslint/no-unused-vars": [
+      "error",
+      {
+        ignoreRestSiblings: true,
+        argsIgnorePattern: "^_",
+        varsIgnorePattern: "^_",
+      },
+    ],
+    "@typescript-eslint/consistent-type-definitions": ["error", "interface"],
+    "@typescript-eslint/explicit-module-boundary-types": "error",
   },
 };
