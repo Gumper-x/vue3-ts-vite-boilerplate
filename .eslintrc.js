@@ -25,6 +25,8 @@ module.exports = {
     "default-param-last": "error",
     "no-var": "error",
     "no-lone-blocks": "error",
+    "require-await": "error",
+    "no-eq-null": "error",
     yoda: "error",
     // eslint-plugin-import
     "import/extensions": [
