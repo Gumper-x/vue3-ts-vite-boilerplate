@@ -10,7 +10,7 @@
     "lint:markup": "vue-tsc --noEmit"
   },
   "dependencies": {
-    "vue": "^3.0.5"
+    "vue": "3.1.5"
   },
   "devDependencies": {
     "@types/node": "^16.4.10",
