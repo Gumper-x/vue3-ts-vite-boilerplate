@@ -1,0 +1,11 @@
+@mixin only-hover {
+  @media (hover: hover) {
+    @content;
+  }
+}
+
+@mixin only-pointer {
+  @media (pointer: coarse) {
+    @content;
+  }
+}
