@@ -18,6 +18,7 @@ export default defineConfig({
       "@": resolve(__dirname, "./src"),
     },
   },
+  envDir: resolve(__dirname, "./env"),
   css: {
     preprocessorOptions: {
       scss: {

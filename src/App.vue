@@ -1,5 +1,6 @@
 <template>
   <div>
+    {{ title }}
     <RouterView />
   </div>
 </template>
@@ -9,6 +10,11 @@
 
   export default defineComponent({
     name: "App",
+    computed: {
+      title(): string {
+        return import.meta.env.VITE_TITLE;
+      },
+    },
   });
 </script>
 
