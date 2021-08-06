@@ -1,0 +1,36 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* Removes background when pressed on touch devices */
+  -webkit-tap-highlight-color: transparent;
+}
+
+button,
+input,
+textarea {
+  outline: none;
+  border: none;
+}
+
+button {
+  cursor: pointer;
+  background: none;
+}
+
+a {
+  text-decoration: none;
+  outline: none;
+}
+
+ul,
+ol,
+li {
+  list-style-type: none;
+}
+
+:disabled {
+  cursor: not-allowed;
+}
