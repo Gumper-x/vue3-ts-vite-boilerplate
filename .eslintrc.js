@@ -57,7 +57,7 @@ module.exports = {
     "promise/always-return": "error",
     // typescript-eslint
     "@typescript-eslint/no-unused-vars": [
-      "error",
+      "warn",
       {
         ignoreRestSiblings: true,
         argsIgnorePattern: "^_",
@@ -65,6 +65,6 @@ module.exports = {
       },
     ],
     "@typescript-eslint/consistent-type-definitions": ["error", "interface"],
-    "@typescript-eslint/explicit-module-boundary-types": "error",
+    "@typescript-eslint/explicit-module-boundary-types": "warn",
   },
 };
