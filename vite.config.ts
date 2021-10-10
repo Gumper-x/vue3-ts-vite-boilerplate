@@ -23,8 +23,8 @@ export default defineConfig({
     preprocessorOptions: {
       scss: {
         additionalData: `
-          @import '@/assets/scss/global';
-          @import '@/assets/scss/mixins';
+          @import '@/app/styles/global';
+          @import '@/app/styles/mixins';
         `,
       },
     },
