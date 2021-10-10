@@ -1,1 +1,1 @@
-# This is where the reused infrastructure code is stored
+# Reusable infrastructure code

@@ -1,1 +1,1 @@
-# The code responsible for the initialization of the application is stored here
+# The code responsible for the initialization of the application
