@@ -8,7 +8,6 @@ based on the best practices for Vue.
 - Typing: [typescript](https://github.com/microsoft/TypeScript)
 - Composition utilities [Recomended]: [vueuse](https://github.com/vueuse/vueuse)
 - Localization: [vue-i18n](https://github.com/intlify/vue-i18n-next), [vite-plugins-i18n](https://github.com/intlify/vite-plugin-vue-i18n)
-- Testing: [jest](https://github.com/facebook/jest), [testing-library](https://testing-library.com/docs/vue-testing-library/intro)
 - Git custom hooks: [husky](https://github.com/typicode/husky)
 - Commit conventions: [@commitlint/config-conventional](https://github.com/conventional-changelog/commitlint/tree/master/%40commitlint/config-conventional)
 - Linters: [commitlint](https://github.com/conventional-changelog/commitlint), [eslint](https://github.com/eslint/eslint), [stylelint](https://github.com/stylelint/stylelint)
