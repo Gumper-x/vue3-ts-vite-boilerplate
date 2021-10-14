@@ -1,5 +1,5 @@
 // Helpers
-import { defineRoutes } from "./helpers/define";
+import { defineRoutes } from "./utils/define";
 // Constants
 import { Route } from "@/shared/constants/routes";
 
