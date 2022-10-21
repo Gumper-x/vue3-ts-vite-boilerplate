@@ -83,7 +83,7 @@ graph TD;
     src --> Основная папка со Слоями
 ```mermaid
 graph TD;
-    i(src)-- Слой инициализации -->id1(<a href='https://gitlab.com/it-enterprise/web-apps/vue-boilerplate/-/blob/main/docs/app.md'>app</a>);
-    i(src)-- Слой основного отображения -->id2(<a href='https://gitlab.com/it-enterprise/web-apps/vue-boilerplate/-/blob/main/docs/pages.md'>pages</a>);
-    i(src)-- Слой переиспользования -->id3(<a href='https://gitlab.com/it-enterprise/web-apps/vue-boilerplate/-/blob/main/docs/shared.md'>shared</a>);
+    i(src)-- Слой инициализации -->id1(<a href='https://github.com/Gumper-x/vue3-ts-vite-boilerplate/blob/new-approach/docs/app.md'>app</a>);
+    i(src)-- Слой основного отображения -->id2(<a href='https://github.com/Gumper-x/vue3-ts-vite-boilerplate/blob/new-approach/docs/pages.md'>pages</a>);
+    i(src)-- Слой переиспользования -->id3(<a href='https://github.com/Gumper-x/vue3-ts-vite-boilerplate/blob/new-approach/docs/shared.md'>shared</a>);
 ```
