@@ -1,0 +1,4 @@
+{
+  "extends": ["@gumper-x"],
+  "rules": {}
+}

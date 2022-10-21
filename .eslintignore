@@ -1,0 +1,3 @@
+**/dist/**
+*/shared/graphql/schema/schema.d.ts
+*/shared/graphql/schema/schema.json

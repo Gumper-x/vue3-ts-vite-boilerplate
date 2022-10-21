@@ -1,0 +1,14 @@
+.scale-enter-active,
+.scale-leave-active {
+  transform: scale(1);
+  opacity: 1;
+  transform-origin: center;
+  transition-duration: 0.2s;
+  transition-property: opacity, transform;
+  transition-timing-function: ease-in-out;
+}
+.scale-enter-from,
+.scale-leave-to {
+  opacity: 0;
+  transform: scale(0.95) translateY(-30px);
+}

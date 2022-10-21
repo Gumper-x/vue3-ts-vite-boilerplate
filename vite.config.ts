@@ -1,32 +1,42 @@
-import { defineConfig } from "vite";
+import { fileURLToPath, URL } from "url";
+import { defineConfig, PluginOption } from "vite";
 import vue from "@vitejs/plugin-vue";
-import { resolve } from "path";
-import ViteVisualizer from "rollup-plugin-visualizer";
+import { quasar, transformAssetUrls } from "@quasar/vite-plugin";
+import checker from "vite-plugin-checker";
+import vueI18n from "@intlify/vite-plugin-vue-i18n";
+import graphql from "@rollup/plugin-graphql";
+import "dotenv/config";
 
-// https://vitejs.dev/config/
+console.log(process.env.APP_BASE_PATH);
 export default defineConfig({
+  // base: import.meta.,
   plugins: [
-    vue(),
-    ViteVisualizer({
-      filename: "./dist/report.html",
-      open: true,
-      template: "network",
+    vue({ template: { transformAssetUrls } }),
+    quasar({
+      sassVariables: "src/app/assets/scss/quasar-variables.scss",
     }),
+    checker({
+      vueTsc: true,
+      overlay: {
+        initialIsOpen: false,
+      },
+    }),
+    vueI18n(),
+    graphql() as PluginOption,
   ],
+  optimizeDeps: {
+    include: ["@apollo/client/core"],
+    exclude: ["@apollo/client"],
+  },
   resolve: {
     alias: {
-      "@": resolve(__dirname, "./src"),
+      "@": fileURLToPath(new URL("./src", import.meta.url)),
     },
   },
-  envDir: resolve(__dirname, "./env"),
-  css: {
-    preprocessorOptions: {
-      scss: {
-        additionalData: `
-          @import '@/app/styles/global';
-          @import '@/app/styles/mixins';
-        `,
-      },
-    },
+  server: {
+    port: 3000,
+  },
+  build: {
+    target: "esnext",
   },
 });
